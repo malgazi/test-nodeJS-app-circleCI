@@ -1,3 +1,6 @@
+#RUN, FROM, MAINTAINER, ADD, CMD, ENTRYPOINT, ENV, EXPOSE,
+#USER, VOLUME, WORKDIR
+#RPM - without dependencies 
 FROM centos:centos6
 
 MAINTAINER nigelpoulton@hotmail.com
@@ -5,7 +8,7 @@ MAINTAINER nigelpoulton@hotmail.com
 # Enable EPEL for Node.js
 #RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 
-RUN yum install epel-release
+RUN yum install -y epel-release
 
 # Install Node...
 RUN yum install -y npm
