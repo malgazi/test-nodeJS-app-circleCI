@@ -11,8 +11,10 @@ MAINTAINER nigelpoulton@hotmail.com
 RUN yum install -y epel-release
 
 # Install Node...
-RUN yum install -y npm
-
+#RUN yum install -y npm
+RUN yum install -y nodejs
+CMS node -v 
+CMS nmp -v
 # Copy app to /src
 COPY . /src
 
