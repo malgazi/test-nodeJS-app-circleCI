@@ -13,6 +13,7 @@ RUN yum install -y epel-release
 # Install Node...
 #RUN yum install -y npm
 CMD echo "Start nodejs installation"
+RUN yum install -y sudo
 RUN yum install -y gcc-c++ make
 RUN curl -sL https://rpm.nodesource.com/setup_6.x | sudo -E bash -
 RUN yum install -y nodejs
