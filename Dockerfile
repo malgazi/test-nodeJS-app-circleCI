@@ -17,8 +17,8 @@ RUN yum install -y gcc-c++ make
 RUN curl -sL https://rpm.nodesource.com/setup_6.x | sudo -E bash -
 RUN yum install -y nodejs
 RUN node -v 
-RUN yum install -y npm
-RUN nmp -v
+#RUN yum install -y npm
+RUN npm -v
 # Copy app to /src
 COPY . /src
 
