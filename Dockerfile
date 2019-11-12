@@ -17,8 +17,8 @@ RUN yum install -y npm
 COPY . /src
 
 # Install app and dependencies into /src
-RUN cd /src; npm install
-
+#RUN cd /src; npm install
+RUN cd /src; npm install -g npm@latest
 EXPOSE 8080
 
 CMD cd /src && node ./app.js
